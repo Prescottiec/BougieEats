@@ -7,10 +7,6 @@ const usersReducer = (state = {}, action) => {
       return Object.assign({}, state, {
         [action.currentUser.id]: action.currentUser,
       });
-    // case RECEIVE_COMMENT:
-    //     return Object.assign({}, state, { [action.author.id]: action.author });
-    // case RECEIVE_TRACK:
-    //     return Object.assign({}, state, action.authors);
     default:
       return state;
   }
