@@ -1,6 +1,5 @@
 class Api::UsersController < ApplicationController
-    before_action :require_no_user!
-    # skip_before_action :verify_authenticity_token
+    # before_action :require_no_user!
 
     def create
         @user = User.new(user_params)

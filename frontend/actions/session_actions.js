@@ -16,16 +16,17 @@ export const logoutCurrentUser = () => ({
 
 export const receiveErrors = (errors) => ({
   type: RECEIVE_SESSION_ERRORS,
-  errors,
+  errors
 });
 
 export const clearErrors = () => ({
-    type: CLEAR_SESSION_ERRORS
+    type: CLEAR_SESSION_ERRORS,
+    errors
 })
 
 export const signup = (user) => {
     return (dispatch) => {
-        APIUtil.signup(user).then(
+        return APIUtil.signup(user).then(
             (user) => {
                 return dispatch(receiveCurrentUser(user));
             }, 
@@ -35,6 +36,11 @@ export const signup = (user) => {
         )
     }
 };
+
+// export const signup = formUser => dispatch => {
+//   return APIUtil.signup(formUser)
+//     .then(user => dispatch(receiveUser(user)), error => dispatch(receiveErrors(error)))
+// }
 
 export const login = (user) => {
     return (dispatch) => {
