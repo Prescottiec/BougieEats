@@ -15,7 +15,7 @@ class SessionForm extends React.Component {
       password: ""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.demoLogin = this.demoLogin.bind(this);
+    // this.demoLogin = this.demoLogin.bind(this);
     this.clearErrors = this.clearErrors.bind(this);
   }
 
@@ -64,4 +64,4 @@ class SessionForm extends React.Component {
 
 }
 
-export default withRouter(SessionForm)
+export default withRouter(SessionForm);
