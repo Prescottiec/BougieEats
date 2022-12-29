@@ -2,9 +2,6 @@ import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 
-// import LoginFormContainer from "./login_form_container";
-// import SignupFormContainer from "./signup_form.container"
-
 class SessionForm extends React.Component {
   constructor(props) {
     super(props);
@@ -16,7 +13,11 @@ class SessionForm extends React.Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     // this.demoLogin = this.demoLogin.bind(this);
-    this.clearErrors = this.clearErrors.bind(this);
+    // this.clearErrors = this.clearErrors.bind(this);
+  }
+
+  componentDidMount() {
+    this.props.clearErrors();
   }
 
   handleSubmit(e) {
@@ -36,11 +37,20 @@ class SessionForm extends React.Component {
 //     this.props.demologin(user).then(() => this.props.history.goBack());
 //   }
 
-  clearErrors(e) {
-    this.props.clearErrors()
-  }
+//   clearErrors(e) {
+//     this.props.clearErrors()
+//   }
 
   render() {
+    let errors;
+    if (this.props.errors[0].length) {
+      errors = this.props.errors[0].map((error, index)=> 
+        (<li key={index}>{error}</li>)
+      )
+      let error = document.getElementById('errors');
+      error.classList.add('errors')
+    };
+
     if (this.props.formType === 'Log In') {
       return (
             <div>

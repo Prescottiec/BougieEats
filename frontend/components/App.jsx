@@ -11,7 +11,6 @@ const App = () => (
   <div>
     <header>
         <h1>Bougie Eats</h1>
-        {/* <GreetingContainer /> */}
     </header>
 
     <Switch>    
