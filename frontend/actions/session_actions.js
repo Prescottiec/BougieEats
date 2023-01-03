@@ -21,7 +21,7 @@ export const receiveErrors = (errors) => ({
 
 export const clearErrors = () => ({
     type: CLEAR_SESSION_ERRORS,
-    errors
+    
 })
 
 export const signup = (user) => {
@@ -36,11 +36,6 @@ export const signup = (user) => {
         )
     }
 };
-
-// export const signup = formUser => dispatch => {
-//   return APIUtil.signup(formUser)
-//     .then(user => dispatch(receiveUser(user)), error => dispatch(receiveErrors(error)))
-// }
 
 export const login = (user) => {
     return (dispatch) => {
