@@ -1,15 +1,11 @@
 import React from 'react';
-import { Link, Redirect } from 'react-router-dom';
-import { withRouter } from 'react-router-dom';
-
 import LoginFormContainer from "./login_form_container";
 import SignupFormContainer from "./signup_form_container";
 
 class SessionForm extends React.Component {
   constructor(props) {
     super(props);
-    
-  }
+  };
 
   render() {
     return (
