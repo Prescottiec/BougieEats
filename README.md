@@ -1,24 +1,24 @@
-# README
+# Bougie Eats
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Bougie Eats Live] (coming soon)
 
-Things you may want to cover:
+## Bougie Eats is a Yelp clone
+* Bougie Eats fullstack clone of Yelp.com, a website that allows users to search for businesses in a specified location and leave ratings and reviews for those businesses.
 
-* Ruby version
+## Table of Contents
+* [Background](#background)
+* [Technologies](#technologies)
+* [Key Features](#key-features)
+  * [User Authentication](#user-authentication)
+  * [Businesses](#businesses)
+  * [Search](#search)
+  * [Reviews](#reviews)
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Technologies
+* Backend: Ruby on Rails
+* Frontend: React/Redux
+* Database: PostgreSQL
+* Third Party API: Google Maps JavsScript API
+* Image Hosting: Amazon S3
+* Design and Styling: HTML and CSS
