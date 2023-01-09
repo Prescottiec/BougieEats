@@ -2,6 +2,8 @@
 
 [Bougie Eats Live] (coming soon)
 
+## Bougie Eats is a Yelp clone
+
 ## Table of Contents
 * [Background](#background)
 * [Technologies](#technologies)
@@ -10,3 +12,7 @@
   * [Businesses](#businesses)
   * [Search](#search)
   * [Reviews](#reviews)
+
+
+## Technologies
+* React, Redux, Ruby, Rails, Jquery, PostgreSQL
