@@ -16,9 +16,9 @@
 
 
 ## Technologies
-# Backend: Ruby on Rails
-# Frontend: React/Redux
-# Database: PostgreSQL
-# Third Party API: Google Maps JavsScript API
-# Image Hosting: Amazon S3
-# Design and Styling: HTML and CSS
+* Backend: Ruby on Rails
+* Frontend: React/Redux
+* Database: PostgreSQL
+* Third Party API: Google Maps JavsScript API
+* Image Hosting: Amazon S3
+* Design and Styling: HTML and CSS
