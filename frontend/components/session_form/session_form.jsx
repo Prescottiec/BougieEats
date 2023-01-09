@@ -12,12 +12,9 @@ class SessionForm extends React.Component {
       <div className="login-page">
         <div className="user-auth-container">
           <h1 className="project-logo">Bougie Eats</h1>
-          <h2 className="tagline">
-            A place to share knowledge and better understand the world
-          </h2>
           <div className="main-session-forms">
-            <SignupFormContainer />
             <LoginFormContainer />
+            <SignupFormContainer />
           </div>
 
         </div>
