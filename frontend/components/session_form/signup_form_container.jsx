@@ -3,10 +3,17 @@ import { signup, clearErrors } from '../../actions/session_actions';
 import SignupForm from './signup_form';
 import { withRouter } from 'react-router-dom'
 
-const mapStateToProps = state => ({
-  errors: Object.values(state.errors),
-  formType: 'Signup'
-})
+// const mapStateToProps = state => ({
+//   errors: Object.values(state.errors),
+//   formType: 'Signup'
+// })
+
+const mapStateToProps = (state, ownProps) => {
+  return {
+    errors: state.errors.session,
+    formType: "Sign Up"
+  };
+};
 
 const mapDispatchToProps = dispatch => ({
   processForm: (user) => dispatch(signup(user)),
