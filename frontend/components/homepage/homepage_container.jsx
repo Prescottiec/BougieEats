@@ -1,23 +1,16 @@
-import { connect } from "react-redux";
-import { clearErrors } from "../../actions/business_actions";
-import Homepage from "./homepage";
-import { logout } from "../../actions/session_actions";
+import { connect } from 'react-redux';
 
+import { logout } from '../../actions/session_actions';
+import Homepage from './homepage';
 
-const mapStateToProps = (state) => {
-    return {
-        errors: state.errors,
-        currentUser: state.entities.users[state.session.id]
-    }
+const mapStateToProps = ({ session, entities: { users } }) => {
+  return {
+    currentUser: users[session.id]
+  };
 };
 
-
-const mapDispatchToProps = (dispatch) => {
-    return {
-        clearErrors: () => dispatch(clearErrors()),
-        logout: () => dispatch(logout())
-    }
-};
-
+const mapDispatchToProps = dispatch => ({
+  logout: () => dispatch(logout())
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Homepage);
