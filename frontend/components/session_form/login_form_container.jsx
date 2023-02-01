@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 // import LoginForm from "./login_form";
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { login, clearErrors } from '../../actions/session_actions';
 import { withRouter } from 'react-router-dom'
 import SessionForm from './session_form';
