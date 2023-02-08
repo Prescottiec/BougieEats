@@ -1,4 +1,6 @@
 import React from 'react';
+import LoginFormContainer from "./login_form_container";
+import SignupFormContainer from "./signup_form_container";
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -40,32 +42,14 @@ class SessionForm extends React.Component {
   render() {
     return (
       <div className="login-form-container">
-        <form onSubmit={this.handleSubmit} className="login-form-box">
-          Welcome to BenchBnB!
+          <h2>Welcome to Bougie Eats!</h2>
           <br/>
           Please {this.props.formType} or {this.props.navLink}
-          {this.renderErrors()}
+          
           <div className="login-form">
-            <br/>
-            <label>Email:
-              <input type="text"
-                value={this.state.email}
-                onChange={this.update('email')}
-                className="login-input"
-              />
-            </label>
-            <br/>
-            <label>Password:
-              <input type="password"
-                value={this.state.password}
-                onChange={this.update('password')}
-                className="login-input"
-              />
-            </label>
-            <br/>
-            <input className="session-submit" type="submit" value={this.props.formType} />
+            <SignupFormContainer />
+            <LoginFormContainer />
           </div>
-        </form>
       </div>
     );
   }
